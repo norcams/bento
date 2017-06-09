@@ -22,16 +22,22 @@ virtualbox-iso|virtualbox-ovf)
     echo 'autoboot_delay="-1"' >>/boot/loader.conf;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rename interfaces to vtnet
     echo 'ifconfig_em1_name="vtnet0"' >>/etc/rc.conf;
     echo 'ifconfig_em2_name="vtnet1"' >>/etc/rc.conf;
     echo 'ifconfig_em3_name="vtnet2"' >>/etc/rc.conf;
     echo 'ifconfig_em4_name="vtnet3"' >>/etc/rc.conf;
+<<<<<<< HEAD
 =======
     #echo 'ifconfig_vtnet0_name="em0"' >>/etc/rc.conf;
     #echo 'ifconfig_vtnet1_name="em1"' >>/etc/rc.conf;
     #echo 'ifconfig_vtnet2_name="em2"' >>/etc/rc.conf;
     #echo 'ifconfig_vtnet3_name="em3"' >>/etc/rc.conf;
 >>>>>>> Do not rename interfaces for VirtualBox
+=======
+>>>>>>> Rename interfaces to vtnet
 
     pw groupadd vboxusers;
     pw groupmod vboxusers -m vagrant;
