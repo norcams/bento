@@ -25,10 +25,6 @@ virtualbox-iso|virtualbox-ovf)
     echo 'ifconfig_em2_name="vtnet1"' >>/etc/rc.conf;
     echo 'ifconfig_em3_name="vtnet2"' >>/etc/rc.conf;
     echo 'ifconfig_em4_name="vtnet3"' >>/etc/rc.conf;
-    #echo 'ifconfig_vtnet0_name="em0"' >>/etc/rc.conf;
-    #echo 'ifconfig_vtnet1_name="em1"' >>/etc/rc.conf;
-    #echo 'ifconfig_vtnet2_name="em2"' >>/etc/rc.conf;
-    #echo 'ifconfig_vtnet3_name="em3"' >>/etc/rc.conf;
 
     pw groupadd vboxusers;
     pw groupmod vboxusers -m vagrant;
