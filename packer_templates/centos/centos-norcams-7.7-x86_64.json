@@ -108,11 +108,7 @@
     },
     {
       "boot_command": [
-<<<<<<< HEAD
         "<up><wait><tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `ks_path`}} net.ifnames=0<enter><wait>"
-=======
-        "<up><wait><tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `ks_path`}}<enter><wait>"
->>>>>>> Updated bento and added centos-norcams-7.7
       ],
       "boot_wait": "10s",
       "memory": "{{ user `memory` }}",
