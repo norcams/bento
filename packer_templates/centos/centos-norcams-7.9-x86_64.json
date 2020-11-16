@@ -104,9 +104,9 @@
     },
     {
       "boot_command": [
-        "<up><wait><tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `ks_path`}}<enter><wait>"
+        "<up><wait><tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{user `ks_path`}} net.ifnames=0<enter><wait>"
       ],
-      "boot_wait": "5s",
+      "boot_wait": "10s",
       "cpus": "{{ user `cpus` }}",
       "disk_size": "{{user `disk_size`}}",
       "headless": "{{ user `headless` }}",
