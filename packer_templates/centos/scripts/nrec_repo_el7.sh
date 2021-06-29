@@ -1,6 +1,6 @@
 #!/bin/sh -eux
 
-repo='https://download.iaas.uio.no/uh-iaas/prod/el7'
+repo='https://download.iaas.uio.no/uh-iaas/test/el7'
 
 cat > /etc/yum.repos.d/CentOS-Base.repo <<- EOM
 [base]
